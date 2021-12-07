@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style1.css"/>
+    <div class="header1" id="myHeader">
+        <h1 style="font-family: Lucida Handwriting, cursive;">Gustoso</h1>
+    </div>
+    <script src="https://kit.fontawesome.com/3ada70f372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="./style1.css">
+
+  <div class="topnav" id="myTopnav">
+      <a href="#week" class="active">This Week's Recipe</a>
+      <a href="./index.html">All Recipes</a>
+      <a href="#pantry">My Italian Pantry</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  <div class="header2">
+    <h1>Our Recipes</h1>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+    <img src="./gallery5.jpg" id="lastClone" alt="">
+    <img src="./gallery1.jpg" alt="">
+    <img src="./gallery2.jpg" alt="">
+    <img src="./gallery3.jpg" alt="">
+    <img src="./gallery4.jpg" alt="">
+    <img src="./gallery5.jpg" alt="">
+    <img src="./gallery1.jpg" id="firstClone" alt="">
+  </div>
+  </div>
+  <i class="fas fa-caret-left" id="prevBtn"></i>
+  <i class="fas fa-caret-right" id="nextBtn"></i>
+
+  <br>
+
+  <p id="paragraph" style="color: #5e3c2c;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare tristique placerat. Aliquam ullamcorper pharetra semper. Integer sit amet vulputate nisl. Suspendisse ultrices leo at leo suscipit, viverra suscipit nulla ultrices. Nullam nibh justo, tincidunt sed justo rutrum, volutpat convallis sapien. Sed sodales nisl eu euismod volutpat. Phasellus cursus lorem sit amet efficitur varius.</p>
+
+  <br>
+  <br>
+  <div class="wrapper">
+    <div id="NavigationBox">
+    <h3>Filters</h3>
+    <input type="checkbox" name="all" value="all" id="all" style="margin-left: 5%;">
+    <label for="all">Show all</label> 
+   <h4>Difficulty</h4>
+    <div class="difficulty">
+    <li>
+      <input type="checkbox" name="difficulty" value="easy" id="easy">
+      <label for="easy">Easy</label> 
+    </li>
+    <li>
+      <input type="checkbox" name="difficulty" value="advanced" id="advanced">
+      <label for="advanced">Advanced</label>
+    </li>
+    <li>
+      <input type="checkbox" name="difficulty" value="expert" id="expert">
+      <label for="expert">Expert</label>
+    </li>
+    </div>
+    <h4>Course</h4>
+    <div class="course">
+    <li>
+      <input type="checkbox" name="course" value="appetiser" id="appetiser">
+      <label for="appetiser">Appetiser</label> 
+    </li>
+    <li>
+      <input type="checkbox" name="course" value="main" id="main">
+      <label for="main">Main</label>
+    </li>
+    <li>
+      <input type="checkbox" name="course" value="dessert" id="dessert">
+      <label for="dessert">Dessert</label>
+    </li>
+    </div>
+    <h4>Dietary preferences</h4>
+    <div class="diet">
+    <li>
+      <input type="checkbox" name="diet" value="vegetarian" id="vegetarian">
+      <label for="vegetarian">Vegetarian</label> 
+    </li>
+    <li>
+      <input type="checkbox" name="diet" value="vegan" id="vegan">
+      <label for="vegan">Vegan</label>
+    </li>
+    <li>
+      <input type="checkbox" name="diet" value="sea" id="sea">
+      <label for="sea">Seafood</label>
+    </li>
+    <li>
+      <input type="checkbox" name="diet" value="gluten" id="gluten">
+      <label for="gluten">Gluten-free</label>
+    </li>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="column easy appetiser vegetarian gluten">
+    <div class="content">
+      <img src="./caprese.jpg" alt="Caprese Salad" style="width:100%">
+      <h4>Caprese salad</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+    <div class="column easy main">
+    <div class="content">
+      <img src="./carbonara.jpg" alt="Spaghetti Alla Carbonara" style="width:100%">
+      <h4>Spaghetti Alla Carbonara</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+    <div class="column easy main vegan">
+      <div class="content">
+        <img src="./neapolitana.jpg" alt="Vegan Pizza Neapolitana" style="width:100%">
+        <h4>Vegan Pizza Neapolitana</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column easy appetiser">
+      <div class="content">
+        <img src="./panzanella.jpg" alt="Panzanella Salad" style="width:100%">
+        <h4>Panzanella Salad</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column easy main gluten vegetarian">
+      <div class="content">
+        <img src="./polenta.jpg" alt="Polenta" style="width:100%">
+        <h4>Easy Polenta</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column easy appetiser sea">
+      <div class="content">
+        <img src="./shrimp.jpg" alt="Spicy Lemon Garlic Shrimp" style="width:100%">
+        <h4>Spicy Lemon and Garlic Shrimp</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column easy dessert vegetarian">
+      <div class="content">
+        <img src="./strawberry.jpg" alt="Strawberry and mascarpone mousse" style="width:100%">
+        <h4>Strawberry Mascarpone Mousse</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column advanced main vegetarian">
+      <div class="content">
+        <img src="./gnocchi.jpg" alt="Gnocchi" style="width:100%">
+        <h4>Gnocchi with creamy tomato sauce</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column advanced main">
+      <div class="content">
+        <img src="./lasagna.jpg" alt="Lasagna" style="width:100%">
+        <h4>Classic Lasagna</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column advanced main vegan gluten">
+      <div class="content">
+        <img src="./parmigiana.jpg" alt="Parmigiana" style="width:100%">
+        <h4>Vegan Parmigiana</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column advanced main vegetarian">
+      <div class="content">
+        <img src="./ravioli.jpg" alt="Ravioli" style="width:100%">
+        <h4>Vegetarian Ravioli</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column advanced dessert vegetarian">
+      <div class="content">
+        <img src="./tiramisu.jpg" alt="Tiramisu" style="width:100%">
+        <h4>Classic Tiramisu</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column expert main gluten">
+      <div class="content">
+        <img src="./osso_buco.jpg" alt="Osso Buco" style="width:100%">
+       <h4>Osso Buco</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column expert main">
+      <div class="content">
+        <img src="./ribollita.jpg" alt="Ribollita" style="width:100%">
+        <h4>Ribollita</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+   <div class="column expert main vegetarian">
+      <div class="content">
+        <img src="./risotto_milanese.jpg" alt="Risotto Alla Milanese" style="width:100%">
+        <h4>Risotto Alla Milanese</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column expert main sea">
+      <div class="content">
+        <img src="./swordfish.jpg" alt="Swordfish" style="width:100%">
+        <h4>Pan cooked Swordfish</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <br>
+
+  <footer id="footer">
+  <div class="notifications">
+    <div id="side">
+      <button id="not">Get Notifications</button><br>
+      <br>
+      <button id="cookie">Manage Cookies</button><br>
+    </div>
+  </div>
+  <div class="contactUs">
+    <div id="side">
+      <h3>Information</h3>
+      <h4>Contact us:</h4>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i><br>
+      </div>
+      <br>
+      <a>About us</a><br>
+      <a style="font-size: larger; font-weight: bold;">Buy the Gustoso Cookbook</a><br>
+      <a>FAQs</a><br>
+      <a>Work with us</a><br>
+      <a>Policies</a><br>
+      <a>T's and C's</a><br>
+    </div>
+  </div>
+  <dic class="newsletter"></dic>
+    <div id="side">
+      <h3>Subscribe to the Gustoso Newsletter</h3>
+      <input type="text" size="25" placeholder="Enter your email address .. ">
+      <button id="subscribe">Subscribe</button>
+      <p id="policy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare est non nibh luctus, vitae facilisis tortor cursus. Sed hendrerit dui a leo cursus, non consectetur erat congue. Nullam gravida.</p>
+    </div>
+  </div>
+  </footer>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+
+</body>
+
+<!-- JS starts here -->
+
+<script>
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+//Buttons
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+//Counter
+let counter = 1;
+const size = carouselImages[0].clientWidth;
+
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+//Button listeners
+
+nextBtn.addEventListener('click', () => {
+  if (counter >= carouselImages.length -1) return;
+    carouselSlide.style.transition = "transform 0.8s ease-in-out";
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+});
+
+prevBtn.addEventListener('click', () => {
+  if (counter <= 0) return;
+    carouselSlide.style.transition = "transform 0.8s ease-in-out";
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+});
+
+carouselSlide.addEventListener('transitionend', ()=>{
+  if (carouselImages[counter].id === 'lastClone') {
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length -2;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  if (carouselImages[counter].id === 'firstClone') {
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length - counter;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+});
+
+var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
+var allColumns = Array.from(document.querySelectorAll('.column'));
+var checked = {};
+
+getChecked('difficulty');
+getChecked('course');
+getChecked('diet');
+
+Array.prototype.forEach.call(allCheckboxes, function (el) {
+  el.addEventListener('change', toggleCheckbox);
+});
+
+function toggleCheckbox(e) {
+  getChecked(e.target.name);
+  setVisibility();
+}
+
+function getChecked(name) {
+  checked[name] = Array.from(document.querySelectorAll('input[name=' + name + ']:checked')).map(function (el) {
+    return el.value;
+  });
+}
+
+function setVisibility() {
+  allColumns.map(function (el) {
+    const allChecked = checked.all?.length;
+    var difficulty = checked.difficulty.length
+            ? Array.from(el.classList).reduce((result, cl) => {
+                if (checked.difficulty.includes(cl)) {
+                  result.push(cl);
+                }
+                return result;
+              }, []).length
+            : true
+    var course = checked.course.length
+            ? Array.from(el.classList).reduce((result, cl) => {
+                if (checked.course.includes(cl)) {
+                  result.push(cl);
+                }
+                return result;
+              }, []).length
+            : true
+    var diet = checked.diet.length
+            ? Array.from(el.classList).reduce((result, cl) => {
+                if (checked.diet.includes(cl)) {
+                  result.push(cl);
+                }
+                return result;
+              }, []).length
+            : true
+    if ((difficulty && course && diet) || allChecked) {
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+}
+
+var topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+</html>
